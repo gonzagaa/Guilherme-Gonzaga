@@ -1,0 +1,137 @@
+#home {
+    background-color: #090909;
+
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#home .content {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .principal {
+    position: relative;
+    width: 100%;
+}
+
+#home h2 {
+    color: rgb(225, 225, 225);
+
+    font-family: "Marcellus", serif; 
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
+    margin-left: 1.4rem;
+}
+
+#home h1 {
+    color: #363636;
+    font-size: 6rem;
+    font-family: "Marcellus", serif; 
+    font-weight: 500;
+    line-height: .7;
+}
+
+#home ion-icon {
+    color: rgb(225, 225, 225);
+    font-size: 2rem;
+    margin-top: 3rem;
+
+    animation: ionicon infinite ease-in-out 3s;
+}
+
+@keyframes ionicon {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.contact {
+    position: absolute;
+    bottom: 5%;
+
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .container:nth-child(1) {
+    text-align: left;
+}
+
+.contact .container:nth-child(2) {
+    text-align: right;
+}
+
+.contact .container p,
+.contact .container p a {
+    color: #868686;
+    font-size: 1.3rem;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+@media (min-width: 1080px) {
+    header#home .principal {
+        width: max-content;
+    }
+
+    #home h2 {
+        font-size: 2.5rem;
+        margin-left: .5rem;
+    }
+
+    #home h1 {
+        font-size: 12rem;
+    }
+
+    header#home .contact {
+        width: 70%;
+    }
+
+    #home .contact .container p,
+    #home .contact .container p a {
+        font-size: 1.4rem;
+    }
+
+    header#home ion-icon {
+        font-size: 3rem;
+        margin-top: 4rem;
+    
+        animation: ionicon infinite ease-in-out 3s;
+    }
+}
+
+h3 {
+  font-family: "Cosi Azure";
+
+  font-family: "Times New Roman";
+
+  font-family: "Cormorant";
+
+  font-family: Helvetica;
+  font-style: italic;
+}
