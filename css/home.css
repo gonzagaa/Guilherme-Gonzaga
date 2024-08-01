@@ -25,23 +25,24 @@
 #home h2 {
     color: rgb(225, 225, 225);
 
-    font-family: "Marcellus", serif; 
+    font-family: var(--Arial); 
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 100%;
-    text-align: left;
-    margin-left: 1.4rem;
+    text-align: center;
+    margin-left: 9rem;
 }
 
 #home h1 {
-    color: #363636;
-    font-size: 6rem;
-    font-family: "Marcellus", serif; 
+    color: #4b4b4b;
+    font-size: 13rem;
+    font-family: var(--Freight); 
+    letter-spacing: -2px;
     font-weight: 500;
-    line-height: .7;
+    line-height: .5;
 }
 
 #home ion-icon {
@@ -100,12 +101,12 @@
     }
 
     #home h2 {
-        font-size: 2.5rem;
-        margin-left: .5rem;
+        font-size: 2rem;
+        margin-left: 12rem;
     }
 
     #home h1 {
-        font-size: 12rem;
+        font-size: 20rem;
     }
 
     header#home .contact {
@@ -123,15 +124,4 @@
     
         animation: ionicon infinite ease-in-out 3s;
     }
-}
-
-h3 {
-  font-family: "Cosi Azure";
-
-  font-family: "Times New Roman";
-
-  font-family: "Cormorant";
-
-  font-family: Helvetica;
-  font-style: italic;
 }

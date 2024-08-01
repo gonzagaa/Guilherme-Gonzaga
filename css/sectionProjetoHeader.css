@@ -12,52 +12,30 @@
     padding-top: 5rem;
 }
 
-.projeto header::after {
-    content: '';
-    position: absolute;
-    background-color: #0f0f0f;
-    width: 300%;
-    height: 130%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    left: 50%;
-}
-
 .projeto header h2 {
-    color: #e7e7e7;
-    font-family: "Marcellus", serif; 
+    color: #000000;
+    font-family: var(--Freight); 
     font-weight: 300;
     font-style: normal;
-
+    line-height: .9;
     font-size: 5rem;
     text-align: left;
 
     position: relative;
 }
 
-.projeto header h2::before {
-    content: '';
-    position: absolute;
-    background: #e7e7e7;
-    width: 10rem;
-    height: 2px;
-    left: -1rem;
-    bottom: -1rem;
-}
-
 .projeto header h3 {
-    color: #b1b1b1;
-    margin-top: 4rem;
+    color: #1a1a1a;
+    margin-top: 3rem;
     text-align: left;
-    font-family: "Cormorant";
-    font-style: italic;
+    font-family: var(--Aaux); 
+    text-transform: uppercase;
+    letter-spacing: .4px;
     font-size: 1.6rem;
     font-weight: 200;
 }
 
 .projeto:nth-child(1) {
-    border-top: 3px solid #fff;
     top: -60%;
 }
 
@@ -99,11 +77,11 @@
 
 @media (min-width: 1080px) {
     section#projetos .projeto {
-        box-shadow: 0 -70px 100px #0000001c;
+        box-shadow: 0 -80px 100px #00000043;
     }
 
-    section.projeto header::after {
-        height: 170%;
+    section.projeto header::before {
+        bottom: -5.5rem;
     }
 
     section.projeto header {
@@ -116,29 +94,30 @@
         position: relative;
     }
 
-    section.projeto header::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-        bottom: -30%;
-        left: 0;
-    }
-
     section.projeto header h2 {
-        font-size: 7rem;
+        font-size: 8rem;
         text-align: left;
-        line-height: 1;
     }
 
     section.projeto header h2::before {
-        bottom: -3rem;
+        display: none;
     }
 
     section.projeto header h3 {
         margin-bottom: .5rem;
         font-size: 1.6rem;
+
+        position: relative;
+    }
+
+    section.projeto header h3::before {
+        content: '';
+        position: absolute;
+        background: #4f4f4f;
+        width: 2px;
+        height: 4rem;
+        left: -1.5rem;
+        top: -1rem;
     }
 
     section.projeto:nth-child(1) {
@@ -154,11 +133,11 @@
     }
     
     section.projeto:nth-child(4) {
-        top: -290%;
+        top: -310%;
     }
     
     section.projeto:nth-child(5) {
-        top: -40%;
+        top: -130%;
     }
     
     section.projeto:nth-child(6) {
@@ -166,7 +145,7 @@
     }
     
     section.projeto:nth-child(7) {
-        top: -80%;
+        top: -90%;
     }
     
     section.projeto:nth-child(8) {

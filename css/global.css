@@ -4,10 +4,29 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Arial";
+  src: url(../fonts/ARIAL.TTF);
+}
+
+@font-face {
+  font-family: "Freight";
+  src: url(../fonts/FreightBigProBook-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Aaux";
+  src: url(../fonts/aauxnextmdwebfont.otf);
+}
+
 :root {
     font-size: 62.5%;
 
     --nav-height: 7.2rem;
+
+    --Aaux: "Aaux";
+    --Freight: "Freight";
+    --Arial: "Arial";
 }  
 
 html {
@@ -51,19 +70,19 @@ html {
 
   @media (min-width: 1080px) {
     .wrapper {
-      width: min(100rem, 100%);
+      width: min(90rem, 100%);
     }
   }
 
   @media (min-width: 1200px) {
     .wrapper {
-      width: min(110rem, 100%);
+      width: min(100rem, 100%);
     }
   }
 
   @media (min-width: 1400px) {
     .wrapper {
-      width: min(120rem, 100%);
+      width: min(110rem, 100%);
     }
 
     :root {
@@ -73,12 +92,12 @@ html {
 
   @media (min-width: 1700px) {
     .wrapper {
-      width: min(130rem, 100%);
+      width: min(120rem, 100%);
     }
   }
   
   section {
-    padding-bottom: 10rem;
+    padding-bottom: 17rem;
     position: relative;
   }
 
