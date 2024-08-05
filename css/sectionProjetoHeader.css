@@ -20,19 +20,30 @@
     line-height: .9;
     font-size: 5rem;
     text-align: left;
+    letter-spacing: -4px;
 
     position: relative;
 }
 
 .projeto header h3 {
     color: #1a1a1a;
-    margin-top: 3rem;
     text-align: left;
     font-family: var(--Aaux); 
     text-transform: uppercase;
-    letter-spacing: .4px;
+    letter-spacing: 1.4px;
     font-size: 1.6rem;
-    font-weight: 200;
+    font-weight: 400;
+}
+
+.projeto header p {
+    text-align: left;
+    font-family: var(--Arial);
+    letter-spacing: 2.2px;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 100;
+    line-height: 1.4;
 }
 
 .projeto:nth-child(1) {
@@ -80,27 +91,25 @@
         box-shadow: 0 -80px 100px #00000043;
     }
 
-    section.projeto header::before {
-        bottom: -5.5rem;
-    }
-
     section.projeto header {
-        gap: 4rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10rem;
-        align-items: end;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
 
         position: relative;
     }
 
-    section.projeto header h2 {
-        font-size: 8rem;
-        text-align: left;
+    section.projeto header .desc {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
     }
 
-    section.projeto header h2::before {
-        display: none;
+    section.projeto header h2 {
+        font-size: 12rem;
+        text-align: left;
     }
 
     section.projeto header h3 {
@@ -110,14 +119,8 @@
         position: relative;
     }
 
-    section.projeto header h3::before {
-        content: '';
-        position: absolute;
-        background: #4f4f4f;
-        width: 2px;
-        height: 4rem;
-        left: -1.5rem;
-        top: -1rem;
+    section.projeto header .desc p {
+        font-size: 1.1rem;
     }
 
     section.projeto:nth-child(1) {
@@ -125,7 +128,7 @@
     }
     
     section.projeto:nth-child(2) {
-        top: -150%;
+        top: -320%;
     }
     
     section.projeto:nth-child(3) {
@@ -145,18 +148,18 @@
     }
     
     section.projeto:nth-child(7) {
-        top: -90%;
+        top: -180%;
     }
     
     section.projeto:nth-child(8) {
-        top: -25%;
+        top: -145%;
     }
     
     section.projeto:nth-child(9) {
-        top: -20%;
+        top: -35%;
     }
     
     section.projeto:nth-child(10) {
-        top: -150%;
+        top: -750%;
     }
 }

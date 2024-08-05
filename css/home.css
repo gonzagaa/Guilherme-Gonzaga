@@ -1,5 +1,5 @@
 #home {
-    background-color: #090909;
+    background-color: #000000;
 
     height: 100vh;
     overflow: hidden;
@@ -91,8 +91,8 @@
 .contact .container p a {
     color: #868686;
     font-size: 1.3rem;
-    font-family: Helvetica;
     font-style: italic;
+    font-family: var(--Arial); 
 }
 
 @media (min-width: 1080px) {
