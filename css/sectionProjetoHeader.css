@@ -20,9 +20,11 @@
     line-height: .9;
     font-size: 5rem;
     text-align: left;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
 
     position: relative;
+
+    margin-bottom: 2rem;
 }
 
 .projeto header h3 {
@@ -33,6 +35,8 @@
     letter-spacing: 1.4px;
     font-size: 1.6rem;
     font-weight: 400;
+
+    margin-bottom: 2rem;
 }
 
 .projeto header p {
@@ -44,6 +48,8 @@
     color: #000000;
     font-weight: 100;
     line-height: 1.4;
+
+    margin-bottom: 2rem;
 }
 
 .projeto:nth-child(1) {
@@ -109,7 +115,10 @@
 
     section.projeto header h2 {
         font-size: 12rem;
+        letter-spacing: -4px;
         text-align: left;
+
+        margin-bottom: 0;
     }
 
     section.projeto:nth-child(1) header h2 {
@@ -141,6 +150,8 @@
 
     section.projeto header .desc p {
         font-size: 1.1rem;
+
+        margin-bottom: 0;
     }
 
     section.projeto:nth-child(1) {
